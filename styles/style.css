@@ -1,0 +1,302 @@
+body{
+  background: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  font-family: 'Roboto Mono', monospace;
+  z-index: -3;
+}
+
+/*Header*/
+
+.title-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1{
+  margin: 0;
+}
+
+  /*Title*/
+
+.name{
+  font-size: 3em;
+  margin: 2em 1em 2em 3em;
+}
+.portfolio{
+  font-size: 5em;
+}
+
+  /*Clock*/
+
+
+.clock-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8em;
+}
+
+.clock{
+  display: flex;
+  justify-content: flex-end;
+  margin: 5em;
+}
+
+h1.clock{
+  font-size: 2em;
+  margin: 0;
+}
+
+/*Button Container*/
+
+.project-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.left-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container{
+  width: 50%;
+  padding: 6em 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  height: 7em;
+  width: 90%;
+  margin: 5em 0 3em 0;
+  color: white;
+  border: white solid 4px;
+}
+
+.right-container .button{
+  margin-left: 5em;
+}
+
+  /*Project [i]*/
+
+.button h1{
+  margin-left: 1.5em;
+}
+
+.project1{
+  background: #72266F;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project2{
+  background: #B99E43;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project3{
+  background: #22788D;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project4{
+  background: #EA2727;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project1:hover{
+  border: #72266F solid 4px;
+  background: white;
+  color: #72266F;
+}
+
+.project2:hover{
+  border: #B99E43 solid 4px;
+  background: white;
+  color: #B99E43;
+}
+
+.project3:hover{
+  border: #22788D solid 4px;
+  background: white;
+  color: #22788D;
+}
+
+.project4:hover{
+  border: #EA2727 solid 4px;
+  background: white;
+  color: #EA2727;
+}
+
+/*Background Square*/
+
+@keyframes square-animation{
+  0% {
+    left: -2em;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX();
+  }
+  100% {
+    right: -2em;
+    transform: translateX(120em);
+  }
+}
+
+.square{
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  left : -2em;
+  background: white;
+  z-index: -1;
+
+  animation-name: square-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.square:nth-child(1){
+  background: #EA2727;
+  bottom: 6em;
+  animation-duration: 19s;
+}
+
+.square:nth-child(2){
+  background: #B99E43;
+  bottom: 58em;
+  animation-duration: 22s;
+}
+
+.square:nth-child(3){
+  background: #22788D;
+  bottom: 21em;
+  animation-duration: 12s;
+  animation-delay: 10s;
+}
+
+.square:nth-child(4){
+  background: #EA2727;
+  bottom: 42em;
+  animation-duration: 25s;
+  animation-delay: 0.1s;
+}
+
+.square:nth-child(5){
+  background: #72266F;
+  bottom: 76em;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
+
+.square:nth-child(6){
+  background: #B99E43;
+  bottom: 10em;
+  animation-duration: 32s;
+  animation-delay: 5s;
+}
+
+.square:nth-child(7){
+  background: #22788D;
+  bottom: 20em;
+  animation-duration: 19s;
+  animation-delay: 3.5s;
+}
+
+.square:nth-child(8){
+  background: #72266F;
+  bottom: 40em;
+  animation-duration: 20s;
+  animation-delay: 0.8s;
+}
+
+.square:nth-child(9){
+  background: #EA2727;
+  bottom: 25em;
+  animation-duration: 19s;
+  animation-delay: 10s;
+}
+
+.square:nth-child(10){
+  background: #B99E43;
+  bottom: 45em;
+  animation-duration: 22s;
+  animation-delay: 11s;
+}
+
+.square:nth-child(11){
+  background: #22788D;
+  bottom: 28em;
+  animation-duration: 12s;
+  animation-delay: 20s;
+}
+
+.square:nth-child(12){
+  background: #72266F;
+  bottom: 42em;
+  animation-duration: 25s;
+  animation-delay: 10s;
+}
+
+.square:nth-child(13){
+  background: #22788D;
+  bottom: 30em;
+  animation-duration: 15s;
+  animation-delay: 3s;
+}
+
+.square:nth-child(14){
+  background: #EA2727;
+  bottom: 57em;
+  animation-duration: 32s;
+  animation-delay: 5s;
+}
+
+.square:nth-child(15){
+  background: #72266F;
+  bottom: 38em;
+  animation-duration: 19s;
+  animation-delay: 12s;
+}
+
+/*Volume*/
+
+.sound-container img{
+  height: 2em;
+  width: 2em;
+  padding: 2em 0 0 2em;
+  cursor: pointer;
+}
+
+.sound-off{
+  display: none;
+}
