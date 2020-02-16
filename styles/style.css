@@ -30,11 +30,11 @@ h1{
   /*Title*/
 
 .name{
-  font-size: 3em;
+  font-size: 2vw;
   margin: 2em 1em 2em 3em;
 }
 .portfolio{
-  font-size: 5em;
+  font-size: 4vw;
 }
 
   /*Clock*/
@@ -55,8 +55,12 @@ h1{
 }
 
 h1.clock{
-  font-size: 2em;
+  font-size: 1.5vw;
   margin: 0;
+}
+
+h1{
+  font-size: 1.5vw;
 }
 
 /*Button Container*/
@@ -82,7 +86,7 @@ h1.clock{
 }
 
 .button{
-  height: 7em;
+  height: 12vh;
   width: 90%;
   margin: 5em 0 3em 0;
   color: white;
@@ -299,4 +303,8 @@ h1.clock{
 
 .sound-off{
   display: none;
+}
+
+@media only screen and (max-width : 320px){
+  /*Faire responsive*/
 }
